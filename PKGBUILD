@@ -77,7 +77,7 @@ package() {
   npm \
     install \
     "${_npm_opts[@]}" \
-    "${srcdir}/${pkg}-${pkgver}.tgz"
+    "${srcdir}/${_pkg}-${pkgver}.tgz"
   # Non-deterministic race in npm gives 777 permissions to random directories.
   # See https://github.com/npm/npm/issues/9359 for details.
   find \
